@@ -1,3 +1,15 @@
 # hopverkefni1
+Lyrics:
 
-Ragnar og Kalli
+ey
+
+yeah
+
+she beat me with the flip flops
+
+shit hurt
+
+
+(Chorus)
+
+OUch x13

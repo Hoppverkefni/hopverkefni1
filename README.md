@@ -1,3 +1,9 @@
 # hopverkefni1
-Gyat 
-iijij
+Lyrics:
+ey
+yeah
+she beat me with the flip flops
+shit hurt
+
+(Chorus)
+OUch x13

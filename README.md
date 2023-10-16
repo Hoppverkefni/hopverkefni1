@@ -13,5 +13,3 @@ shit hurt
 (Chorus)
 
 OUch x13
-
-Im gay

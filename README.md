@@ -16,4 +16,3 @@ OUch x13
 
 shawty melodies
 
-please death me im gay

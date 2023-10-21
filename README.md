@@ -1,18 +1,5 @@
-# hopverkefni1
-Lyrics:
-
-ey
-
-yeah
-
-she beat me with the flip flops
-
-shit hurt
+Hópverkefni 1 
+Carlos og Ragnarok
 
 
-(Chorus)
-
-OUch x13
-
-shawty melodies
 

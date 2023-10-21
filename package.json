@@ -1,0 +1,21 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "description": "Hópverkefni 1  Carlos og Ragnarok",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hopverkefni1"
+  },
+  "author": "Karl og Ragnar",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.2",
+    "sass": "^1.69.4",
+    "stylelint": "^15.11.0"
+  }
+}

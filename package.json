@@ -20,6 +20,9 @@
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "install": "^0.13.0",
+    "npm": "^10.2.1",
     "sass": "^1.69.4",
     "stylelint": "^15.11.0"
   }

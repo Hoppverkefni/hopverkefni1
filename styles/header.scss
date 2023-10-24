@@ -1,1 +1,15 @@
 //header.scss
+
+// Header Begin
+.header {
+    width: 100%;      
+    max-width: 1440px;
+    height: 565px;
+  
+    // Set the background properties
+    background-image: url('img\Header_Background.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+  

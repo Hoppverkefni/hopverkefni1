@@ -123,4 +123,37 @@ body {
   align-items: center;
 }
 
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(fontsLora-VariableFont_wght.ttf) format("ttf");
+}
+body {
+  font-family: Lora;
+  background-color: #fff;
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Tags {
+  display: flex;
+  gap: 10px;
+}
+.Tags .TAG {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: #E1CEC2;
+  cursor: pointer;
+}
+.Tags .TAG:hover {
+  background-color: #c4a898;
+}
+
 /*# sourceMappingURL=styles.css.map */

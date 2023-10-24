@@ -1,28 +1,38 @@
 //vorulisti.scss
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-display: swap;
+    src: url(fonts\Lora-VariableFont_wght.ttf) format('ttf');
+  }
+  body {
+    font-family: Lora; 
+    background-color: #fff; 
+    padding: 20px;
+  }
+  
+
 p {
-    margin: 0;  // Remove default margin
-    padding: 0; // Remove default padding
+    margin: 0;  
+    padding: 0; 
+    font-size: 24px; 
+    margin-bottom: 20px;
   }
-  
-  // Styling for "Raða eftir:" text
-  p {
-    font-size: 24px;  // Example size, adjust accordingly
-    margin-bottom: 20px; // Some spacing to separate from tags
-  }
-  
   // Styling for Tags
   .Tags {
     display: flex;  // To display the tags in a row
     gap: 10px;      // Providing some gap between tags
   
     .TAG {
-      padding: 8px 16px;  // Some padding for the tags
-      border-radius: 20px;  // Rounded corners
-      background-color: #F4F4F4; // Example gray background
+      padding: 8px 16px;  
+      border-radius: 10px;  
+      background-color: #E1CEC2;
+      ; 
       cursor: pointer;  // To show a hand cursor on hover
   
       &:hover {
-        background-color: #E0E0E0;  // Slightly darker background on hover
+        background-color: #c4a898;  // Slightly darker background on hover
       }
     }
   }

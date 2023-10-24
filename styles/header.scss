@@ -1,5 +1,12 @@
 //header.scss
 
+//font
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-display: swap;
+    src: url(./fonts/Lora-VariableFont_wght.ttf) format('woff');
+  }
 // Header Begin
 .header {
     width: 100%;      

@@ -1,17 +1,124 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "gyat!"
- *   |         ^^^^^^^
- *   '
- *   styles/config.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"gyat!\"\a   \2502          ^^^^^^^\a   \2575 \a   styles/config.scss 2:9  root stylesheet";
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
+}
+.header-content {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header-content img {
+  width: 100%;
+  height: auto;
+}
+
+.tilbods {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  z-index: 1;
+}
+
+.slagord {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  z-index: 1;
+}
+
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 10px;
+}
+
+.Nav-Tæknibuðin {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.spyglasses {
+  margin-right: 10px;
+}
+
+.search {
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+.Categories {
+  display: flex;
+  gap: 20px;
+}
+
+.Categories li {
+  list-style: none;
+}
+
+.Categories a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.Categories a:hover {
+  background-color: #eee;
+}
+
+.Cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Cart-Icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.Counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */

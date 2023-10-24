@@ -1,1 +1,28 @@
 //vorulisti.scss
+p {
+    margin: 0;  // Remove default margin
+    padding: 0; // Remove default padding
+  }
+  
+  // Styling for "Raða eftir:" text
+  p {
+    font-size: 24px;  // Example size, adjust accordingly
+    margin-bottom: 20px; // Some spacing to separate from tags
+  }
+  
+  // Styling for Tags
+  .Tags {
+    display: flex;  // To display the tags in a row
+    gap: 10px;      // Providing some gap between tags
+  
+    .TAG {
+      padding: 8px 16px;  // Some padding for the tags
+      border-radius: 20px;  // Rounded corners
+      background-color: #F4F4F4; // Example gray background
+      cursor: pointer;  // To show a hand cursor on hover
+  
+      &:hover {
+        background-color: #E0E0E0;  // Slightly darker background on hover
+      }
+    }
+  }

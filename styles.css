@@ -202,6 +202,10 @@ body {
   height: 415px;
 }
 
+.otherpage .main-content {
+  padding-top: 60px; /* Or use padding-top if you prefer */
+}
+
 /* Reset og border-box á allt */
 * {
   margin: 0;
@@ -803,10 +807,6 @@ footer .copyright p {
 .product .product-details .vorutakki:hover {
   background-color: #6F4E37;
   color: #FEFEFE;
-}
-.product body {
-  font-family: "Arial", sans-serif;
-  padding: 50px;
 }
 .product .Eiginleikar {
   max-width: 600px;

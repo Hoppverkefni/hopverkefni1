@@ -9,21 +9,36 @@
 </head>
 <body>
     <header>
-        <nav class="Navigation">
-            <ul>
-                <!--gera search glugga-->
+        <div class="nav-container">
+            <nav class="navigation">
                 <div class="logo-container">
-                    <img src="img/Logo.png" alt="Logo">
-                    <strong><h3>Tæknibúðin</h3></strong>
+                    <img class="logo" src="img/logo.svg" />
+                    <div class="logo-text">Tæknibúðin</div>
                 </div>
-                <input type="search" name="search" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."> 
-                <!--logo á left side-->
-                <li><a href="sidur/vorulisti.html">Nýjar Vörur</a></li>
-                <li><a href="sidur/vorulisti.html">Tilboðs vörur</a></li>
-                <li><a href="sidur/vara.html">Allar Vörur</a></li>
-                <!--ýta á cart image til að fara á pöntunarsíða-->
-            </ul>
-        </nav>
+                <div class="search-categories">
+                    <div class="search">
+                        <img class="vector" src="img/vector.svg" />
+                        <input class="search-input" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+                        </input>
+                    </div>
+                    <div class="categories">
+                        <div class="nav-links"><a href="sidur/vorulisti.html">Nýjar vörur</a></div>
+                        <div class="nav-links"><a href="sidur/vara.html">Tilboðs vörur</a></div>
+                        <div class="nav-links"><a href="sidur/pontun.html">Allar vörur</a></div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <a href="sidur/pontun.html">
+                        <img class="cart-icon" src="img/cart-icon.svg" />
+                        <div class="cart-count"></div>
+                        <div class="label">
+                            <div class="text-wrapper">1</div>
+                        </div>
+                    </a>
+                </div>
+                
+            </nav>
+        </div>
     </header>
 
     <p class="Nyjarvorur">Nýjar vörur</p>

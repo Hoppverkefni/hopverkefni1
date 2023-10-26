@@ -3,6 +3,7 @@
     display: flex;
     align-items: flex-start;
     padding: 20px;
+    background-color: #f4f4f4; // Set a light background color for better contrast
 
     .product-image {
         width: 690px;
@@ -47,7 +48,7 @@
             margin-top: 20px;
         }
 
-        .product-price {
+        .verd {
             font-family: 'Lato', sans-serif;
             font-weight: 700;
             font-size: 20px;
@@ -55,7 +56,8 @@
             margin-top: 20px;
         }
 
-        .btn-add-to-cart {
+        .vorutakki {
+            display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
             background-color: #FEFEFE;
@@ -74,5 +76,52 @@
                 color: #FEFEFE;
             }
         }
+    } 
+}
+.Eiginleikar {
+    max-width: 600px;
+    margin-left: 255px;
+    padding: 30px;
+  
+    .ordid.eiginleikar {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 60px;
     }
+  
+    .Kubbasett,
+    .Staerd,
+    .Styringar {
+      margin-bottom: 30px;
+  
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .description {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+}
+.tengdar-vorur {
+    display: flex;
+    text-align: left;
+    background-color: #E1CEC2;
+    font-size: 32px;
+    padding-left: 15px;
+    padding-top: 30px;
+
+}
+.tvo-box {
+  background-color: #E1CEC2;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }

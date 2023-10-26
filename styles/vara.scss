@@ -105,4 +105,23 @@
         line-height: 1.5;
       }
     }
-  }
+}
+.tengdar-vorur {
+    display: flex;
+    text-align: left;
+    background-color: #E1CEC2;
+    font-size: 32px;
+    padding-left: 15px;
+    padding-top: 30px;
+
+}
+.tvo-box {
+  background-color: #E1CEC2;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

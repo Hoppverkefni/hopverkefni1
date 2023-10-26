@@ -3,6 +3,7 @@
     display: flex;
     align-items: flex-start;
     padding: 20px;
+    background-color: #f4f4f4; // Set a light background color for better contrast
 
     .product-image {
         width: 690px;
@@ -47,7 +48,7 @@
             margin-top: 20px;
         }
 
-        .product-price {
+        .verd {
             font-family: 'Lato', sans-serif;
             font-weight: 700;
             font-size: 20px;
@@ -55,7 +56,8 @@
             margin-top: 20px;
         }
 
-        .btn-add-to-cart {
+        .vorutakki {
+            display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
             background-color: #FEFEFE;

@@ -27,23 +27,46 @@
     padding-left: 2px;
   }
   
-  // Styling for Tags
+  
   .Tags {
-    display: flex;  // To display the tags in a row
-    gap: 10px;      // Providing some gap between tags
+    display: flex;  
+    gap: 10px;      
+    padding-bottom: 40px;
   
     .TAG {
       padding: 8px 16px;
       border-radius: 6px;
       background-color: #E1CEC2;
       font-size: 18px;
-      cursor: pointer;  // To show a hand cursor on hover
+      cursor: pointer;  
   
       &:hover {
-        background-color: #c4a898;  // Slightly darker background on hover
+        background-color: #c4a898; 
       }
     }
   }
+  .tolf-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    gap: 30px; 
+    background-color: #E1CEC2;
+    background-size: cover;
+    padding: 15px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.robot, .modurbord, .matrix {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Robot-mynd img {
+    width: 100%;
+    height: auto;
+}
+
   
   .robot, .modurbord, .matrix {
     width: 100%;

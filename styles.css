@@ -138,121 +138,68 @@ body {
   padding-top: 40px;
 }
 
-/* Reset og border-box á allt */
-* {
-  margin: 0;
-  padding: 0;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 120px 16px;
 }
 
-html {
-  box-sizing: border-box;
+.text-container {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  width: 448px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* Leturgerðir */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
-}
-:root {
-  --body-font-family: "Lato-Regular", Helvetica;
-  --body-font-weight: 400;
-  --body-font-size: 16px;
-  --body-letter-spacing: 0px;
-  --body-line-height: 24px;
-  --body-font-style: normal;
-  --main-heading-font-family: "Lato-Regular", Helvetica;
-  --main-heading-font-weight: 400;
-  --main-heading-font-size: 36px;
-  --main-heading-letter-spacing: 0px;
-  --main-heading-line-height: 48px;
-  --main-heading-font-style: normal;
-  --secondary-heading-font-family: "Lato-Regular", Helvetica;
-  --secondary-heading-font-weight: 400;
-  --secondary-heading-font-size: 32px;
-  --secondary-heading-letter-spacing: 0px;
-  --secondary-heading-line-height: 48px;
-  --secondary-heading-font-style: normal;
-  --large-body-font-family: "Lato-Regular", Helvetica;
-  --large-body-font-weight: 400;
-  --large-body-font-size: 20px;
-  --large-body-letter-spacing: 0px;
-  --large-body-line-height: 32px;
-  --large-body-font-style: normal;
-  --card-heading-font-family: "Lato-Regular", Helvetica;
-  --card-heading-font-weight: 400;
-  --card-heading-font-size: 22px;
-  --card-heading-letter-spacing: 0px;
-  --card-heading-line-height: 32px;
-  --card-heading-font-style: normal;
-  --small-font-family: "Lato-Regular", Helvetica;
-  --small-font-weight: 400;
-  --small-font-size: 14px;
-  --small-letter-spacing: 0px;
-  --small-line-height: 16px;
-  --small-font-style: normal;
-  /* Litir */
-  --coffee: rgba(111, 78, 55, 1);
-  --black-coffee: rgba(60, 42, 30, 1);
-  --light: rgba(254, 254, 254, 1);
-  --coffee-with-milk: rgba(225, 206, 194, 1);
-}
-
-/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* Almennt */
-html,
-input,
-select,
-button {
-  font-size: var(--font-base-body-px);
-  font-family: var(--font-family-base);
-}
-
-h1,
-h2,
-h3 {
-  /* Setjum almennt bil á eftir fyrirsögnum */
-  margin-bottom: var(--spacing);
-  font-family: var(--font-family-heading);
-}
-
-p {
-  color: #000;
-  font-family: var(--body-font-family);
-  font-size: 20px;
-  font-style: normal;
+.text-container p:first-child {
+  font-size: 36px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 48px;
+  font-family: Lato;
+  color: black;
 }
 
-strong {
+.text-container p:first-child strong {
   font-weight: 700;
 }
 
-a {
-  color: inherit;
-  background-color: inherit;
+.text-container p:nth-child(2) {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: Lato;
+  color: black;
+  font-weight: 400;
 }
 
-img {
-  width: 100%;
+.takki {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px #3c2a1e solid;
+  background-color: #6f4e37;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  background-color: #682d2d;
+}
+
+.image-container img {
+  width: 622px;
+  height: 415px;
 }
 
 /* Reset og border-box á allt */
@@ -475,7 +422,6 @@ a:hover {
 .search-categories {
   display: flex;
   gap: 30px;
-  z-index: 101;
 }
 
 .search-categories-drop {
@@ -733,7 +679,7 @@ body {
 
 footer {
   width: 100%;
-  background-color: #3C2A1E;
+  background-color: #3c2a1e;
   display: flex;
   justify-content: space-between;
   padding: 50px 20px;
@@ -756,7 +702,7 @@ footer section h2:after {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #E1CEC2;
+  background-color: #e1cec2;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -780,11 +726,12 @@ footer .copyright {
   bottom: 0;
   left: 0;
   text-align: center;
-  color: #6F4E37;
-  font-size: 14px;
-  border-top: 1px solid #6F4E37;
+  border-top: 1px solid #6f4e37;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+footer .copyright p {
+  color: white;
 }
 
 .product {

@@ -1,4 +1,121 @@
 @charset "UTF-8";
+/* Reset og border-box á allt */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Leturgerðir */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
+}
+:root {
+  --body-font-family: "Lato-Regular", Helvetica;
+  --body-font-weight: 400;
+  --body-font-size: 16px;
+  --body-letter-spacing: 0px;
+  --body-line-height: 24px;
+  --body-font-style: normal;
+  --main-heading-font-family: "Lato-Regular", Helvetica;
+  --main-heading-font-weight: 400;
+  --main-heading-font-size: 36px;
+  --main-heading-letter-spacing: 0px;
+  --main-heading-line-height: 48px;
+  --main-heading-font-style: normal;
+  --secondary-heading-font-family: "Lato-Regular", Helvetica;
+  --secondary-heading-font-weight: 400;
+  --secondary-heading-font-size: 32px;
+  --secondary-heading-letter-spacing: 0px;
+  --secondary-heading-line-height: 48px;
+  --secondary-heading-font-style: normal;
+  --large-body-font-family: "Lato-Regular", Helvetica;
+  --large-body-font-weight: 400;
+  --large-body-font-size: 20px;
+  --large-body-letter-spacing: 0px;
+  --large-body-line-height: 32px;
+  --large-body-font-style: normal;
+  --card-heading-font-family: "Lato-Regular", Helvetica;
+  --card-heading-font-weight: 400;
+  --card-heading-font-size: 22px;
+  --card-heading-letter-spacing: 0px;
+  --card-heading-line-height: 32px;
+  --card-heading-font-style: normal;
+  --small-font-family: "Lato-Regular", Helvetica;
+  --small-font-weight: 400;
+  --small-font-size: 14px;
+  --small-letter-spacing: 0px;
+  --small-line-height: 16px;
+  --small-font-style: normal;
+  /* Litir */
+  --coffee: rgba(111, 78, 55, 1);
+  --black-coffee: rgba(60, 42, 30, 1);
+  --light: rgba(254, 254, 254, 1);
+  --coffee-with-milk: rgba(225, 206, 194, 1);
+}
+
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Almennt */
+html,
+input,
+select,
+button {
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
+}
+
+h1,
+h2,
+h3 {
+  /* Setjum almennt bil á eftir fyrirsögnum */
+  margin-bottom: var(--spacing);
+  font-family: var(--font-family-heading);
+}
+
+p {
+  color: #000;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,120 +126,473 @@ body {
   overflow-x: hidden;
 }
 
+.four-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 30px;
+  gap: 30px;
+  background-color: #e1cec2;
+  background-size: cover;
+  padding: 15px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+/* Reset og border-box á allt */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Leturgerðir */
 @font-face {
   font-family: "Lora";
   font-style: normal;
   font-display: swap;
-  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
+  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
 }
-.header-content {
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
+:root {
+  --body-font-family: "Lato-Regular", Helvetica;
+  --body-font-weight: 400;
+  --body-font-size: 16px;
+  --body-letter-spacing: 0px;
+  --body-line-height: 24px;
+  --body-font-style: normal;
+  --main-heading-font-family: "Lato-Regular", Helvetica;
+  --main-heading-font-weight: 400;
+  --main-heading-font-size: 36px;
+  --main-heading-letter-spacing: 0px;
+  --main-heading-line-height: 48px;
+  --main-heading-font-style: normal;
+  --secondary-heading-font-family: "Lato-Regular", Helvetica;
+  --secondary-heading-font-weight: 400;
+  --secondary-heading-font-size: 32px;
+  --secondary-heading-letter-spacing: 0px;
+  --secondary-heading-line-height: 48px;
+  --secondary-heading-font-style: normal;
+  --large-body-font-family: "Lato-Regular", Helvetica;
+  --large-body-font-weight: 400;
+  --large-body-font-size: 20px;
+  --large-body-letter-spacing: 0px;
+  --large-body-line-height: 32px;
+  --large-body-font-style: normal;
+  --card-heading-font-family: "Lato-Regular", Helvetica;
+  --card-heading-font-weight: 400;
+  --card-heading-font-size: 22px;
+  --card-heading-letter-spacing: 0px;
+  --card-heading-line-height: 32px;
+  --card-heading-font-style: normal;
+  --small-font-family: "Lato-Regular", Helvetica;
+  --small-font-weight: 400;
+  --small-font-size: 14px;
+  --small-letter-spacing: 0px;
+  --small-line-height: 16px;
+  --small-font-style: normal;
+  /* Litir */
+  --coffee: rgba(111, 78, 55, 1);
+  --black-coffee: rgba(60, 42, 30, 1);
+  --light: rgba(254, 254, 254, 1);
+  --coffee-with-milk: rgba(225, 206, 194, 1);
+}
+
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
   overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-.header-content img {
+/* Almennt */
+html,
+input,
+select,
+button {
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
+}
+
+h1,
+h2,
+h3 {
+  /* Setjum almennt bil á eftir fyrirsögnum */
+  margin-bottom: var(--spacing);
+  font-family: var(--font-family-heading);
+}
+
+p {
+  color: #000;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+}
+
+img {
   width: 100%;
-  height: auto;
 }
 
-.tilbods {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  z-index: 1;
+/* Reset og border-box á allt */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.slagord {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Leturgerðir */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
+}
+:root {
+  --body-font-family: "Lato-Regular", Helvetica;
+  --body-font-weight: 400;
+  --body-font-size: 16px;
+  --body-letter-spacing: 0px;
+  --body-line-height: 24px;
+  --body-font-style: normal;
+  --main-heading-font-family: "Lato-Regular", Helvetica;
+  --main-heading-font-weight: 400;
+  --main-heading-font-size: 36px;
+  --main-heading-letter-spacing: 0px;
+  --main-heading-line-height: 48px;
+  --main-heading-font-style: normal;
+  --secondary-heading-font-family: "Lato-Regular", Helvetica;
+  --secondary-heading-font-weight: 400;
+  --secondary-heading-font-size: 32px;
+  --secondary-heading-letter-spacing: 0px;
+  --secondary-heading-line-height: 48px;
+  --secondary-heading-font-style: normal;
+  --large-body-font-family: "Lato-Regular", Helvetica;
+  --large-body-font-weight: 400;
+  --large-body-font-size: 20px;
+  --large-body-letter-spacing: 0px;
+  --large-body-line-height: 32px;
+  --large-body-font-style: normal;
+  --card-heading-font-family: "Lato-Regular", Helvetica;
+  --card-heading-font-weight: 400;
+  --card-heading-font-size: 22px;
+  --card-heading-letter-spacing: 0px;
+  --card-heading-line-height: 32px;
+  --card-heading-font-style: normal;
+  --small-font-family: "Lato-Regular", Helvetica;
+  --small-font-weight: 400;
+  --small-font-size: 14px;
+  --small-letter-spacing: 0px;
+  --small-line-height: 16px;
+  --small-font-style: normal;
+  /* Litir */
+  --coffee: rgba(111, 78, 55, 1);
+  --black-coffee: rgba(60, 42, 30, 1);
+  --light: rgba(254, 254, 254, 1);
+  --coffee-with-milk: rgba(225, 206, 194, 1);
+}
+
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
   position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Almennt */
+html,
+input,
+select,
+button {
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
+}
+
+h1,
+h2,
+h3 {
+  /* Setjum almennt bil á eftir fyrirsögnum */
+  margin-bottom: var(--spacing);
+  font-family: var(--font-family-heading);
+}
+
+p {
+  color: #000;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.hausinn {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/headerback.jpeg);
+  object-fit: cover;
+  object-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: bottom center;
+}
+
+.header {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 565px;
+  padding: 176px 256px 132px 254px;
+  background-size: 100% 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.tilbod {
+  color: #000;
+  text-align: center;
+  font-family: var(--body-font-family);
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.textinn {
+  width: 500px;
+  color: #000;
+  text-align: center;
+  font-family: var(--body-font-family);
   font-size: 36px;
-  z-index: 1;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
 }
 
-/* General Navigation Styling */
-.Navigation {
-  width: 100%;
-  padding: 20px;
+@media only screen and (max-width: 950px) {
+  .tilbod {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .header {
+    height: 322px;
+  }
+}
+.nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  z-index: 100;
 }
 
-.nav-content {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 20px; /* Increased spacing */
+.navigation {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1400px; /* Added max width for larger screens */
-  width: 100%;
-  padding: 0 40px; /* Padding on the left and right edges */
+  width: 1440px;
 }
 
 .logo-container {
-  display: flex;
+  display: inline-flex;
+  padding: 0px 0px 0px 15px;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  z-index: 101;
 }
 
-.logo-container img {
-  max-height: 50px;
+.logo {
+  width: 30px;
+  height: 30px;
 }
 
-.logo-container .Nav-Tæknibuðin {
-  font-size: 20px;
-  margin-bottom: 5px; /* Adjust for better vertical alignment */
+.logo-text {
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
 }
 
-.spyglasses {
-  width: 24px;
-  margin-right: 15px; /* Increased spacing */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.search-categories {
+  display: flex;
+  gap: 30px;
+  z-index: 101;
+}
+
+.search-categories-drop {
+  display: flex;
+  gap: 30px;
+  z-index: 101;
 }
 
 .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-drop {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 100%;
-  padding: 8px 16px;
+}
+
+.search-input-drop {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: var(--body-font-family);
   font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #e0e0e0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.Categories {
+.vector {
+  position: absolute;
+  right: 10px;
+  width: auto;
+}
+
+.search-input {
+  width: 450px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.categories {
   display: flex;
-  gap: 20px; /* Increased spacing */
-}
-
-.Categories li {
-  list-style: none;
-}
-
-.Cart {
-  display: flex;
+  width: 330px;
+  justify-content: space-between;
   align-items: center;
-  gap: 15px; /* Increased spacing */
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.Cart-Icon {
-  width: 24px;
-}
-
-.Counter {
-  background-color: red;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 14px;
+.cart {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
   display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 101;
+}
+
+.cart-icon {
+  padding: 15px;
+}
+
+.label {
+  display: flex;
+  position: absolute;
   justify-content: center;
-  align-items: center;
+  top: 32px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: #6f4e37;
+  border-radius: 10px;
 }
 
+.label .text-wrapper {
+  display: flex;
+  position: absolute;
+  color: #fefefe;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-input {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .search {
+    display: none;
+  }
+}
+@media screen and (max-width: 630px) {
+  .search-categories {
+    display: none;
+  }
+  .logo-container {
+    flex: 1;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
 @font-face {
   font-family: "Lato";
   font-style: normal;
@@ -132,7 +602,6 @@ body {
 body {
   font-family: "Lato";
   background-color: #fff;
-  padding: 20px;
 }
 
 .Nyjarvorur {
@@ -316,6 +785,75 @@ footer .copyright {
   border-top: 1px solid #6F4E37;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.product {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+.product .product-image {
+  width: 690px;
+  height: 463px;
+  margin-right: 40px;
+}
+.product .product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.product .product-details .product-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: black;
+  margin-bottom: 10px;
+}
+.product .product-details .tags {
+  display: flex;
+  gap: 10px;
+}
+.product .product-details .tags .tag {
+  padding: 5px;
+  background-color: #E1CEC2;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+.product .product-details .product-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  line-height: 32px;
+  margin-top: 20px;
+}
+.product .product-details .product-price {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+}
+.product .product-details .btn-add-to-cart {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #FEFEFE;
+  border: 1px solid #6F4E37;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #3C2A1E;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.product .product-details .btn-add-to-cart:hover {
+  background-color: #6F4E37;
+  color: #FEFEFE;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -138,16 +138,121 @@ body {
   padding-top: 40px;
 }
 
-.four-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 30px;
-  gap: 30px;
-  background-color: #e1cec2;
-  background-size: cover;
-  padding: 15px;
-  padding-bottom: 40px;
-  padding-top: 40px;
+/* Reset og border-box á allt */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Leturgerðir */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
+}
+:root {
+  --body-font-family: "Lato-Regular", Helvetica;
+  --body-font-weight: 400;
+  --body-font-size: 16px;
+  --body-letter-spacing: 0px;
+  --body-line-height: 24px;
+  --body-font-style: normal;
+  --main-heading-font-family: "Lato-Regular", Helvetica;
+  --main-heading-font-weight: 400;
+  --main-heading-font-size: 36px;
+  --main-heading-letter-spacing: 0px;
+  --main-heading-line-height: 48px;
+  --main-heading-font-style: normal;
+  --secondary-heading-font-family: "Lato-Regular", Helvetica;
+  --secondary-heading-font-weight: 400;
+  --secondary-heading-font-size: 32px;
+  --secondary-heading-letter-spacing: 0px;
+  --secondary-heading-line-height: 48px;
+  --secondary-heading-font-style: normal;
+  --large-body-font-family: "Lato-Regular", Helvetica;
+  --large-body-font-weight: 400;
+  --large-body-font-size: 20px;
+  --large-body-letter-spacing: 0px;
+  --large-body-line-height: 32px;
+  --large-body-font-style: normal;
+  --card-heading-font-family: "Lato-Regular", Helvetica;
+  --card-heading-font-weight: 400;
+  --card-heading-font-size: 22px;
+  --card-heading-letter-spacing: 0px;
+  --card-heading-line-height: 32px;
+  --card-heading-font-style: normal;
+  --small-font-family: "Lato-Regular", Helvetica;
+  --small-font-weight: 400;
+  --small-font-size: 14px;
+  --small-letter-spacing: 0px;
+  --small-line-height: 16px;
+  --small-font-style: normal;
+  /* Litir */
+  --coffee: rgba(111, 78, 55, 1);
+  --black-coffee: rgba(60, 42, 30, 1);
+  --light: rgba(254, 254, 254, 1);
+  --coffee-with-milk: rgba(225, 206, 194, 1);
+}
+
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Almennt */
+html,
+input,
+select,
+button {
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
+}
+
+h1,
+h2,
+h3 {
+  /* Setjum almennt bil á eftir fyrirsögnum */
+  margin-bottom: var(--spacing);
+  font-family: var(--font-family-heading);
+}
+
+p {
+  color: #000;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+}
+
+img {
+  width: 100%;
 }
 
 /* Reset og border-box á allt */
@@ -267,133 +372,15 @@ img {
   width: 100%;
 }
 
-.filter {
-  position: relative;
-  z-index: 2;
+.hausinn {
   width: 100%;
   height: 100%;
-  background-image: url(./img/background.png);
+  background-image: url(/img/headerback.jpeg);
   object-fit: cover;
-  object-position: center;
+  object-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* Reset og border-box á allt */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* Leturgerðir */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
-}
-:root {
-  --body-font-family: "Lato-Regular", Helvetica;
-  --body-font-weight: 400;
-  --body-font-size: 16px;
-  --body-letter-spacing: 0px;
-  --body-line-height: 24px;
-  --body-font-style: normal;
-  --main-heading-font-family: "Lato-Regular", Helvetica;
-  --main-heading-font-weight: 400;
-  --main-heading-font-size: 36px;
-  --main-heading-letter-spacing: 0px;
-  --main-heading-line-height: 48px;
-  --main-heading-font-style: normal;
-  --secondary-heading-font-family: "Lato-Regular", Helvetica;
-  --secondary-heading-font-weight: 400;
-  --secondary-heading-font-size: 32px;
-  --secondary-heading-letter-spacing: 0px;
-  --secondary-heading-line-height: 48px;
-  --secondary-heading-font-style: normal;
-  --large-body-font-family: "Lato-Regular", Helvetica;
-  --large-body-font-weight: 400;
-  --large-body-font-size: 20px;
-  --large-body-letter-spacing: 0px;
-  --large-body-line-height: 32px;
-  --large-body-font-style: normal;
-  --card-heading-font-family: "Lato-Regular", Helvetica;
-  --card-heading-font-weight: 400;
-  --card-heading-font-size: 22px;
-  --card-heading-letter-spacing: 0px;
-  --card-heading-line-height: 32px;
-  --card-heading-font-style: normal;
-  --small-font-family: "Lato-Regular", Helvetica;
-  --small-font-weight: 400;
-  --small-font-size: 14px;
-  --small-letter-spacing: 0px;
-  --small-line-height: 16px;
-  --small-font-style: normal;
-  /* Litir */
-  --coffee: rgba(111, 78, 55, 1);
-  --black-coffee: rgba(60, 42, 30, 1);
-  --light: rgba(254, 254, 254, 1);
-  --coffee-with-milk: rgba(225, 206, 194, 1);
-}
-
-/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* Almennt */
-html,
-input,
-select,
-button {
-  font-size: var(--font-base-body-px);
-  font-family: var(--font-family-base);
-}
-
-h1,
-h2,
-h3 {
-  /* Setjum almennt bil á eftir fyrirsögnum */
-  margin-bottom: var(--spacing);
-  font-family: var(--font-family-heading);
-}
-
-p {
-  color: #000;
-  font-family: var(--body-font-family);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-strong {
-  font-weight: 700;
-}
-
-a {
-  color: inherit;
-  background-color: inherit;
-}
-
-img {
-  width: 100%;
+  position: bottom center;
 }
 
 .header {
@@ -418,7 +405,7 @@ img {
   font-weight: 700;
 }
 
-.slagord {
+.textinn {
   width: 500px;
   color: #000;
   text-align: center;
@@ -439,123 +426,6 @@ img {
     height: 322px;
   }
 }
-/* Reset og border-box á allt */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* Leturgerðir */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
-}
-:root {
-  --body-font-family: "Lato-Regular", Helvetica;
-  --body-font-weight: 400;
-  --body-font-size: 16px;
-  --body-letter-spacing: 0px;
-  --body-line-height: 24px;
-  --body-font-style: normal;
-  --main-heading-font-family: "Lato-Regular", Helvetica;
-  --main-heading-font-weight: 400;
-  --main-heading-font-size: 36px;
-  --main-heading-letter-spacing: 0px;
-  --main-heading-line-height: 48px;
-  --main-heading-font-style: normal;
-  --secondary-heading-font-family: "Lato-Regular", Helvetica;
-  --secondary-heading-font-weight: 400;
-  --secondary-heading-font-size: 32px;
-  --secondary-heading-letter-spacing: 0px;
-  --secondary-heading-line-height: 48px;
-  --secondary-heading-font-style: normal;
-  --large-body-font-family: "Lato-Regular", Helvetica;
-  --large-body-font-weight: 400;
-  --large-body-font-size: 20px;
-  --large-body-letter-spacing: 0px;
-  --large-body-line-height: 32px;
-  --large-body-font-style: normal;
-  --card-heading-font-family: "Lato-Regular", Helvetica;
-  --card-heading-font-weight: 400;
-  --card-heading-font-size: 22px;
-  --card-heading-letter-spacing: 0px;
-  --card-heading-line-height: 32px;
-  --card-heading-font-style: normal;
-  --small-font-family: "Lato-Regular", Helvetica;
-  --small-font-weight: 400;
-  --small-font-size: 14px;
-  --small-letter-spacing: 0px;
-  --small-line-height: 16px;
-  --small-font-style: normal;
-  /* Litir */
-  --coffee: rgba(111, 78, 55, 1);
-  --black-coffee: rgba(60, 42, 30, 1);
-  --light: rgba(254, 254, 254, 1);
-  --coffee-with-milk: rgba(225, 206, 194, 1);
-}
-
-/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* Almennt */
-html,
-input,
-select,
-button {
-  font-size: var(--font-base-body-px);
-  font-family: var(--font-family-base);
-}
-
-h1,
-h2,
-h3 {
-  /* Setjum almennt bil á eftir fyrirsögnum */
-  margin-bottom: var(--spacing);
-  font-family: var(--font-family-heading);
-}
-
-p {
-  color: #000;
-  font-family: var(--body-font-family);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-strong {
-  font-weight: 700;
-}
-
-a {
-  color: inherit;
-  background-color: inherit;
-}
-
-img {
-  width: 100%;
-}
-
 .nav-container {
   display: flex;
   justify-content: center;
@@ -723,259 +593,6 @@ a:hover {
     gap: 10px;
   }
 }
-/* Reset og border-box á allt */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* Leturgerðir */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
-}
-:root {
-  --body-font-family: "Lato-Regular", Helvetica;
-  --body-font-weight: 400;
-  --body-font-size: 16px;
-  --body-letter-spacing: 0px;
-  --body-line-height: 24px;
-  --body-font-style: normal;
-  --main-heading-font-family: "Lato-Regular", Helvetica;
-  --main-heading-font-weight: 400;
-  --main-heading-font-size: 36px;
-  --main-heading-letter-spacing: 0px;
-  --main-heading-line-height: 48px;
-  --main-heading-font-style: normal;
-  --secondary-heading-font-family: "Lato-Regular", Helvetica;
-  --secondary-heading-font-weight: 400;
-  --secondary-heading-font-size: 32px;
-  --secondary-heading-letter-spacing: 0px;
-  --secondary-heading-line-height: 48px;
-  --secondary-heading-font-style: normal;
-  --large-body-font-family: "Lato-Regular", Helvetica;
-  --large-body-font-weight: 400;
-  --large-body-font-size: 20px;
-  --large-body-letter-spacing: 0px;
-  --large-body-line-height: 32px;
-  --large-body-font-style: normal;
-  --card-heading-font-family: "Lato-Regular", Helvetica;
-  --card-heading-font-weight: 400;
-  --card-heading-font-size: 22px;
-  --card-heading-letter-spacing: 0px;
-  --card-heading-line-height: 32px;
-  --card-heading-font-style: normal;
-  --small-font-family: "Lato-Regular", Helvetica;
-  --small-font-weight: 400;
-  --small-font-size: 14px;
-  --small-letter-spacing: 0px;
-  --small-line-height: 16px;
-  --small-font-style: normal;
-  /* Litir */
-  --coffee: rgba(111, 78, 55, 1);
-  --black-coffee: rgba(60, 42, 30, 1);
-  --light: rgba(254, 254, 254, 1);
-  --coffee-with-milk: rgba(225, 206, 194, 1);
-}
-
-/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* Almennt */
-html,
-input,
-select,
-button {
-  font-size: var(--font-base-body-px);
-  font-family: var(--font-family-base);
-}
-
-h1,
-h2,
-h3 {
-  /* Setjum almennt bil á eftir fyrirsögnum */
-  margin-bottom: var(--spacing);
-  font-family: var(--font-family-heading);
-}
-
-p {
-  color: #000;
-  font-family: var(--body-font-family);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-strong {
-  font-weight: 700;
-}
-
-a {
-  color: inherit;
-  background-color: inherit;
-}
-
-img {
-  width: 100%;
-}
-
-.menu-items {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  padding: 90px 15px 0 15px;
-  top: 0;
-  list-style: none;
-  opacity: 0;
-  font-size: 2rem;
-  border: 4px solid #FFF;
-  background-color: #FFF;
-  border-radius: 10px;
-  transition: transform 100ms ease-in-out, opacity 200ms;
-}
-
-.menu-items li {
-  color: #000;
-  padding: 0.5rem;
-}
-
-.menu-items li a {
-  text-decoration: none;
-  font-family: "Lato-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 60px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 110px;
-}
-
-.menu-items li a:hover {
-  cursor: pointer;
-}
-
-.dropdown-search {
-  width: 100%;
-  z-index: 20;
-}
-
-.check {
-  display: none;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  height: 30px;
-  width: 30px;
-  opacity: 0;
-  z-index: 999;
-}
-
-.check:hover {
-  cursor: pointer;
-}
-
-.check:checked ~ .menu-items {
-  display: block;
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  margin: 0px 15px;
-  z-index: 998;
-}
-
-.hamburger .burger1 {
-  transform-origin: 0% 0%;
-  transition: transform 100ms ease-in-out;
-}
-
-.hamburger .burger3 {
-  transform-origin: 0% 100%;
-  transition: transform 100ms ease-in-out;
-}
-
-.check:checked ~ .hamburger .burger1 {
-  display: block;
-  transform: rotate(35deg);
-}
-
-.check:checked ~ .hamburger .burger2 {
-  opacity: 0;
-}
-
-.check:checked ~ .hamburger .burger3 {
-  display: block;
-  transform: rotate(-35deg);
-}
-
-.burger1 {
-  display: block;
-  background-color: #000;
-  width: 100%;
-  height: 4px;
-  margin: 2px 0;
-  z-index: 5;
-  border-radius: 10px;
-}
-
-.burger2 {
-  display: block;
-  background-color: #000;
-  width: 100%;
-  height: 4px;
-  margin: 2px 0;
-  border-radius: 10px;
-  z-index: 5;
-}
-
-.burger3 {
-  display: block;
-  background-color: #000;
-  width: 100%;
-  height: 4px;
-  margin: 2px 0;
-  border-radius: 10px;
-  z-index: 5;
-}
-
-@media screen and (max-width: 630px) {
-  .check {
-    display: block;
-  }
-  .hamburger {
-    display: flex;
-  }
-}
-
 @font-face {
   font-family: "Lato";
   font-style: normal;

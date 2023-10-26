@@ -144,7 +144,6 @@ body {
 body {
   font-family: "Lato";
   background-color: #fff;
-  padding: 20px;
 }
 
 .Nyjarvorur {
@@ -328,6 +327,75 @@ footer .copyright {
   border-top: 1px solid #6F4E37;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.product {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+.product .product-image {
+  width: 690px;
+  height: 463px;
+  margin-right: 40px;
+}
+.product .product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.product .product-details .product-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: black;
+  margin-bottom: 10px;
+}
+.product .product-details .tags {
+  display: flex;
+  gap: 10px;
+}
+.product .product-details .tags .tag {
+  padding: 5px;
+  background-color: #E1CEC2;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+.product .product-details .product-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  line-height: 32px;
+  margin-top: 20px;
+}
+.product .product-details .product-price {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+}
+.product .product-details .btn-add-to-cart {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #FEFEFE;
+  border: 1px solid #6F4E37;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #3C2A1E;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.product .product-details .btn-add-to-cart:hover {
+  background-color: #6F4E37;
+  color: #FEFEFE;
 }
 
 /*# sourceMappingURL=styles.css.map */

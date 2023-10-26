@@ -24,15 +24,21 @@
     </nav>
     <main>
         <!--Section/box með title(Tæknilegt Móðurborð) og text undir og img, setja i körfu button og Tags sem segja (Nýtt) og (Takmarkað Magn) -->
-        <section class="">
-            <h1>Tæknilegt Móðurborð</h1>
-            <p class = "TAG">Nýtt</p>
-            <p class = "TAG">Takmarkað magn</p>
-            <p>Afskaplega gott, tæknilegt, og traust móðurborð. Passar vel í allar gerðir tölva sem taka við tæknilegum móðurborðum. Nam lobortis tellus tellus, vulputate pellentesque mi tempus non. Nunc luctus ac ligula id fringilla. Aliquam id lacus id ipsum suscipit pellentesque et a ante. Nullam vitae nisi pharetra, rhoncus dolor eu, condimentum mauris. Nunc gravida id nulla a accumsan. Duis id sapien ac risus luctus porta nec sed ante. Nam quis ex quis dolor auctor vehicula. </p>
-            <p>189.000 kr.</p>
-            <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
-
-        </section>
+        <!--Kalla það bara product-->
+        <section class="product">
+          <img class="product-image" src="img\Motherboard.png" alt="Tæknilegt móðurborð">
+          <div class="product-details">
+              <h1 class="product-title">Tæknilegt Móðurborð</h1>
+              <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Takmarkað magn</p>
+              </div>
+              <p class="product-description">Afskaplega gott, tæknilegt, og traust móðurborð. Passar vel í allar gerðir tölva sem taka við tæknilegum móðurborðum...</p>
+              <p class="verd">189.000 kr.</p>
+              <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
+          </div>
+      </section>
+      
 
         <!--2nd Section/box sem er með title(eiginleikgar) og svo bara texti undir með minni titles-->
         <section class="">
@@ -49,24 +55,30 @@
         <!--3rd section/box sem er meðð title (Tengdar Vörur) og 2 box undir-->
         <section class="">
             <p>Tengdar Vörur</p>
-            <div class="12-box">
-                <img src="../img/Robot.png" alt="">
-                <title>Vinalegur vinnuróbot</title>
-                <p class = "TAG">Nýtt</p>
-                <p class = "TAG">Ekki fyrir börn</p>
-    
-                <p id="price">1.499.990</p>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
+            <div class="robot">
+              <div class="Robot-mynd">
+                  <img src="../img/Robot.png" alt="Robot Mynd">
+              </div>
+              <div class="vinarlegur-vinnurobot">Vinalegur vinnuróbot</div>
+              <div class="tags">
+                  <span class="tag">Nýtt</span>
+                  <span class="tag">Ekki fyrir börn</span>
+              </div>
+              <div class="verd">1.499.990 kr.</div>
+              <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
+          </div>
+          <div class="matrix">
+            <div class="Robot-mynd">
+                <img src="../img/Matrix.png" alt="Matrix Mynd">
             </div>
-            <div class="12-box">
-                <img src="../img/Matrix.png" alt="">
-                <title>Matrixið</title>
-                <p class = "TAG">Nýtt</p>
-                <p class = "TAG">Ekki fyrir róbota</p>
-    
-                <p id="price">infinite</p>
-                <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
+            <div class="vinarlegur-vinnurobot">Matrixið</div>
+            <div class="tags">
+                <span class="tag">Nýtt</span>
+                <span class="tag">Ekki fyrir róbota</span>
             </div>
+            <div class="verd">299.999.999.499.990 kr</div>
+            <a class="vorutakki" href="sidur/pontun.html">SETJA Í KÖRFU</a>
+        </div>
         </section>
     </main>
     <footer>

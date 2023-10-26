@@ -738,6 +738,7 @@ footer .copyright p {
   display: flex;
   align-items: flex-start;
   padding: 20px;
+  background-color: #f4f4f4;
 }
 .product .product-image {
   width: 690px;
@@ -777,14 +778,15 @@ footer .copyright p {
   line-height: 32px;
   margin-top: 20px;
 }
-.product .product-details .product-price {
+.product .product-details .verd {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: black;
   margin-top: 20px;
 }
-.product .product-details .btn-add-to-cart {
+.product .product-details .vorutakki {
+  display: inline-block;
   margin-top: 20px;
   padding: 10px 15px;
   background-color: #FEFEFE;
@@ -798,9 +800,40 @@ footer .copyright p {
   text-align: center;
   transition: background-color 0.3s;
 }
-.product .product-details .btn-add-to-cart:hover {
+.product .product-details .vorutakki:hover {
   background-color: #6F4E37;
   color: #FEFEFE;
+}
+.product body {
+  font-family: "Arial", sans-serif;
+  padding: 50px;
+}
+.product .Eiginleikar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.product .Eiginleikar .ordid.eiginleikar {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.product .Eiginleikar .Kubbasett,
+.product .Eiginleikar .Staerd,
+.product .Eiginleikar .Styringar {
+  margin-bottom: 30px;
+}
+.product .Eiginleikar .Kubbasett .title,
+.product .Eiginleikar .Staerd .title,
+.product .Eiginleikar .Styringar .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.product .Eiginleikar .Kubbasett .description,
+.product .Eiginleikar .Staerd .description,
+.product .Eiginleikar .Styringar .description {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=styles.css.map */

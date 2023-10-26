@@ -2,24 +2,37 @@
 
 //font
 @font-face {
-    font-family: 'Lora';
-    font-style: normal;
-    font-display: swap;
-    src: url(./fonts/Lora-VariableFont_wght.ttf) format('woff');
-  }
-// Header Begin
-.header {
-    width: 100%;      
-    max-width: 1440px;
-    height: 565px;
-  
-    // Bakgrunnur
-    background-image: url('img\Header_Background.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
+}
+.header-content {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-    //Nav
-    
-  }
-  
+.header-content img {
+  width: 100%;
+  height: auto;
+}
+
+.tilbods {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  z-index: 1;
+}
+
+.slagord {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  z-index: 1;
+}

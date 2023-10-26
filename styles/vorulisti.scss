@@ -1,1 +1,152 @@
 //vorulisti.scss
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-display: swap;
+    src: url(fonts/Lato-Regular.ttf) format('truetype');
+  }
+  
+  body {
+    font-family: 'Lato';
+    background-color: #fff;
+  }
+  
+  .Nyjarvorur {
+    display: flex;
+    font-size: 60px;
+    padding: 20px;
+    padding-left: 2px;
+  }
+  
+  .Rada_eftir {
+    display: flex;
+    font-size: 32px;
+    padding: 10px;
+    padding-left: 2px;
+  }
+  
+  
+  .Tags {
+    display: flex;  
+    gap: 10px;      
+    padding-bottom: 40px;
+  
+    .TAG {
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: #E1CEC2;
+      font-size: 18px;
+      cursor: pointer;  
+  
+      &:hover {
+        background-color: #c4a898; 
+      }
+    }
+  }
+  .tolf-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    gap: 30px; 
+    background-color: #E1CEC2;
+    background-size: cover;
+    padding: 15px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.robot, .modurbord, .matrix {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Robot-mynd img {
+    width: 100%;
+    height: auto;
+}
+
+  
+  .robot, .modurbord, .matrix {
+    width: 100%;
+    max-width: 360px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  
+    .Robot-mynd {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    .vinarlegur-vinnurobot {
+      text-align: left;
+      font-size: 22px;
+      font-weight: 400;
+      color: #333;
+      padding-left: 10px;
+      width: 100%;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  
+    .tags {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      padding-left: 10px;
+      width: 100%;
+  
+      .tag {
+        padding: 5px 10px;
+        background-color: #E1CEC2;
+        border-radius: 7px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+      }
+    }
+  
+    .verd {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      text-align: left;
+      padding-left: 10px;
+      width: 100%;
+    }
+  
+    .vorutakki {
+      width: 100%;
+      padding: 10px;
+      background: #FEFEFE;
+      border: 1px solid #6F4E37;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #3C2A1E;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background: #6F4E37;
+        color: #FEFEFE;
+      }
+    }
+  }
+
+ 

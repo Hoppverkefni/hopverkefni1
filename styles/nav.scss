@@ -1,0 +1,77 @@
+/* General Navigation Styling */
+.Navigation {
+  width: 100%;
+  padding: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;  /* Increased spacing */
+  align-items: center;
+  max-width: 1400px;  /* Added max width for larger screens */
+  width: 100%;
+  padding: 0 40px;  /* Padding on the left and right edges */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-container img {
+  max-height: 50px;
+}
+
+.logo-container .Nav-Tæknibuðin {
+  font-size: 20px;
+  margin-bottom: 5px;  /* Adjust for better vertical alignment */
+}
+
+.spyglasses {
+  width: 24px;
+  margin-right: 15px;  /* Increased spacing */
+}
+
+.search {
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.Categories {
+  display: flex;
+  gap: 20px;  /* Increased spacing */
+}
+
+.Categories li {
+  list-style: none;
+}
+
+.Cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;  /* Increased spacing */
+}
+
+.Cart-Icon {
+  width: 24px;
+}
+
+.Counter {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

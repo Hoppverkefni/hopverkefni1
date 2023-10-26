@@ -558,20 +558,21 @@ body {
   display: flex;
   font-size: 60px;
   padding: 20px;
-  padding-left: 2px;
+  padding-left: 20px;
 }
 
 .Rada_eftir {
   display: flex;
   font-size: 32px;
   padding: 10px;
-  padding-left: 2px;
+  padding-left: 20px;
 }
 
 .Tags {
   display: flex;
   gap: 10px;
   padding-bottom: 40px;
+  padding-left: 20px;
 }
 .Tags .TAG {
   padding: 8px 16px;

@@ -10,10 +10,10 @@ body {
 }
 
 @font-face {
-  font-family: "Lora";
+  font-family: "Lato";
   font-style: normal;
   font-display: swap;
-  src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
+  src: url(fonts/Lato-Regular.ttf) format("truetype");
 }
 .header-content {
   position: relative;
@@ -124,22 +124,29 @@ body {
 }
 
 @font-face {
-  font-family: "Lora";
+  font-family: "Lato";
   font-style: normal;
   font-display: swap;
-  src: url(fontsLora-VariableFont_wght.ttf) format("ttf");
+  src: url(fonts/Lato-Regular.ttf) format("truetype");
 }
 body {
-  font-family: Lora;
+  font-family: "Lato";
   background-color: #fff;
   padding: 20px;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  margin-bottom: 20px;
+.Nyjarvorur {
+  display: flex;
+  font-size: 60px;
+  padding: 20px;
+  padding-left: 2px;
+}
+
+.Rada_eftir {
+  display: flex;
+  font-size: 32px;
+  padding: 10px;
+  padding-left: 2px;
 }
 
 .Tags {
@@ -148,12 +155,88 @@ p {
 }
 .Tags .TAG {
   padding: 8px 16px;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #E1CEC2;
+  font-size: 18px;
   cursor: pointer;
 }
 .Tags .TAG:hover {
   background-color: #c4a898;
+}
+
+.robot, .modurbord, .matrix {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.robot .Robot-mynd, .modurbord .Robot-mynd, .matrix .Robot-mynd {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.robot .Robot-mynd img, .modurbord .Robot-mynd img, .matrix .Robot-mynd img {
+  max-width: 100%;
+  height: auto;
+}
+.robot .vinarlegur-vinnurobot, .modurbord .vinarlegur-vinnurobot, .matrix .vinarlegur-vinnurobot {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  padding-left: 10px;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.robot .tags, .modurbord .tags, .matrix .tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
+}
+.robot .tags .tag, .modurbord .tags .tag, .matrix .tags .tag {
+  padding: 5px 10px;
+  background-color: #E1CEC2;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.robot .verd, .modurbord .verd, .matrix .verd {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  padding-left: 10px;
+  width: 100%;
+}
+.robot .vorutakki, .modurbord .vorutakki, .matrix .vorutakki {
+  width: 100%;
+  padding: 10px;
+  background: #FEFEFE;
+  border: 1px solid #6F4E37;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3C2A1E;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.robot .vorutakki:hover, .modurbord .vorutakki:hover, .matrix .vorutakki:hover {
+  background: #6F4E37;
+  color: #FEFEFE;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -808,30 +808,32 @@ footer .copyright p {
   background-color: #6F4E37;
   color: #FEFEFE;
 }
-.product .Eiginleikar {
+
+.Eiginleikar {
   max-width: 600px;
-  margin: 0 auto;
+  margin-left: 255px;
+  padding: 30px;
 }
-.product .Eiginleikar .ordid.eiginleikar {
+.Eiginleikar .ordid.eiginleikar {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
-.product .Eiginleikar .Kubbasett,
-.product .Eiginleikar .Staerd,
-.product .Eiginleikar .Styringar {
+.Eiginleikar .Kubbasett,
+.Eiginleikar .Staerd,
+.Eiginleikar .Styringar {
   margin-bottom: 30px;
 }
-.product .Eiginleikar .Kubbasett .title,
-.product .Eiginleikar .Staerd .title,
-.product .Eiginleikar .Styringar .title {
+.Eiginleikar .Kubbasett .title,
+.Eiginleikar .Staerd .title,
+.Eiginleikar .Styringar .title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.product .Eiginleikar .Kubbasett .description,
-.product .Eiginleikar .Staerd .description,
-.product .Eiginleikar .Styringar .description {
+.Eiginleikar .Kubbasett .description,
+.Eiginleikar .Staerd .description,
+.Eiginleikar .Styringar .description {
   font-size: 16px;
   line-height: 1.5;
 }
